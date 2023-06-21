@@ -1,0 +1,8 @@
+prefix=/opt/ros/kinetic
+
+Name: filters
+Description: Description of filters
+Version: 1.7.5
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmean -lparams -lincrement -lmedian -ltransfer_function
+Requires: roslib roscpp rosconsole pluginlib

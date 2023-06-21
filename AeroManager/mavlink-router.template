@@ -1,0 +1,27 @@
+[General]
+TcpServerPort=5760
+#ReportStats=true
+#Log=/var/lib/mavlink-router/
+
+[UartEndpoint uart]
+Device = /dev/ttyS1
+Baud = 921600
+
+# UDP is faster than TCP server. Use to inject data
+[UdpEndpoint MavRos]
+Mode = Normal
+Address = 127.0.0.1
+Port = 15000
+
+# This is to be used to send to QGroundControl
+[UdpEndpoint QGC]
+Mode = Normal
+Address = TEMPLATE_QGC_IP_ADDRESS
+Port = TEMPLATE_QGC_PORT
+
+# This is to be used to communicate with offboard controller
+#[UdpEndpoint GCS]
+#Mode = Normal
+#Address = TEMPLATE_GCS_IP
+#Port = TEMPLATE_GCS_PORT
+# THIS IS CURRENTLY DONE THROUGH MAVROS BRIDGE TO AVOID TIMESYNC PROBLEMS.

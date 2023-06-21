@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: qt_gui_py_common
+Version: 0.3.18
+Summary: qt_gui_py_common provides common functionality for GUI plugins written in Python.
+Home-page: http://ros.org/wiki/qt_gui_py_common
+Author: Scott Logan <cottsay@openrobotics.org>, Shane Loretz <sloretz@openrobotics.org>
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

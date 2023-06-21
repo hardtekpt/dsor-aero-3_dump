@@ -1,0 +1,35 @@
+[General]
+TcpServerPort=5760
+#ReportStats=true
+#Log=/var/lib/mavlink-router/
+
+[UartEndpoint uart]
+Device = /dev/ttyS1
+Baud = 921600
+
+#[UdpEndpoint wifi]
+#Mode = Normal
+#Address = 192.168.20.255
+
+[UdpEndpoint ethernet-over-usb]
+Mode = Normal
+Address = 192.168.7.255
+
+[UdpEndpoint csd]
+Address = 0.0.0.0
+Port = 80550
+Mode = eavesdropping
+
+[UdpEndpoint QGC]
+Mode = Normal
+Address = TEMPLATE_GCS_IP_ADDRESS
+
+[UdpEndpoint offboard_computer]
+Mode = eavesdropping
+Port = TEMPLATE_RECEIVE_PORT
+Address = 0.0.0.0
+
+[UdpEndpoint Matlab]
+Mode = Normal
+Port = TEMPLATE_SEND_PORT
+Address = TEMPLATE_SEND_IP

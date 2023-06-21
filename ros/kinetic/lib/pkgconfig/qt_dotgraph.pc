@@ -1,0 +1,8 @@
+prefix=/opt/ros/kinetic
+
+Name: qt_dotgraph
+Description: Description of qt_dotgraph
+Version: 0.3.18
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
